@@ -1,4 +1,4 @@
-/* General Container Styles */
+/* heroStyles.module.css */
 .container {
     display: flex;
     justify-content: space-between;
@@ -7,8 +7,9 @@
     min-height: 100vh;
     width: 100vw; /* Ensures the container spans the full viewport width */
     margin: 0; /* Removes any extra margins */
-    background-color: #F3F4F6; /* Soft pastel light gray */
-    color: #2E4053; /* Modern dark gray for text */
+    background: url('../../assets/background_image.jpg');
+    background-size: cover; 
+    background-color: #000000; /* Soft pastel light gray */
     padding: 0 20px; /* Add horizontal padding only */
     box-sizing: border-box; /* Ensure padding is included in width/height */
 }
@@ -42,40 +43,42 @@ h1 {
     font-size: 3rem;
     margin: 0;
     padding: 10px 0;
-    color: #2C3E50; /* Slightly darker modern gray */
+    color: #f2a17c; /* Slightly darker modern gray */
 }
 
 h2 {
     font-size: 1.8rem;
     margin: 10px 0;
-    color: #5D6D7E; /* Muted pastel gray-blue */
+    color: #ddbfb1; /* Muted pastel gray-blue */
 }
 
 /* Specific Icon Styles for span img */
 .container span img {
     width: 40px;  /* Make the icon size very small */
     height: 40px; /* Ensure height is also adjusted */
-    filter: brightness(0) saturate(100%) invert(25%); /* Ensure color stays consistent */
+    filter: brightness(100) saturate(100%) invert(75%); /* Ensure color stays consistent */
     background-color: transparent;
     padding: 5px; /* Ensure padding doesn't interfere */
     box-shadow: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for icons */
-.container span a {
-    transition: transform 0.3s ease-in-out;
-}
-
-.container span a:hover {
+.container span img:hover {
     transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling for the paragraph */
 p {
     font-size: 1.2rem;
-    color: #38353596; /* Muted pastel gray */
+    color: #00000096; /* Muted pastel gray */
     line-height: 1.6;
     margin-top: 20px;
+    display: block; 
+    background-color: #f2a17c;
+    border-radius:15px; 
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 /* Media Queries for Responsive Design */
