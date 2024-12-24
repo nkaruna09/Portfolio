@@ -1,0 +1,167 @@
+/* General Container Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    width: 100vw; /* Ensures the container spans the full viewport width */
+    margin: 0; /* Removes any extra margins */
+    background-color: #F3F4F6; /* Soft pastel light gray */
+    color: #2E4053; /* Modern dark gray for text */
+    padding: 0 20px; /* Add horizontal padding only */
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+.colorModeContainer {
+    flex-shrink: 0;
+    margin-left: 10px;
+    position: relative; 
+}
+
+.hero {
+    width: 30vw; /* Fluid width relative to viewport */
+    height: 30vw; /* Fluid height relative to viewport */
+    max-width: 500px; /* Set a maximum size */
+    max-height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #2E4053; /* Dark gray border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    margin-left: 40%; /* Keeps the image aligned the way you like */
+}
+
+.info {
+    max-width: 600px;
+    flex: 1;
+    margin: 5%; /* Reduced margins for fluid alignment */
+    text-align: left;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px 0;
+    color: #2C3E50; /* Slightly darker modern gray */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #5D6D7E; /* Muted pastel gray-blue */
+}
+
+/* Specific Icon Styles for span img */
+.container span img {
+    width: 40px;  /* Make the icon size very small */
+    height: 40px; /* Ensure height is also adjusted */
+    filter: brightness(0) saturate(100%) invert(25%); /* Ensure color stays consistent */
+    background-color: transparent;
+    padding: 5px; /* Ensure padding doesn't interfere */
+    box-shadow: none;
+}
+
+/* Hover effect for icons */
+.container span a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.container span a:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the paragraph */
+p {
+    font-size: 1.2rem;
+    color: #38353596; /* Muted pastel gray */
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1300px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .hero {
+        width: 35vw; /* Adjust size for medium screens */
+        height: 35vw;
+        max-width: 400px; /* Restrict max size */
+        max-height: 400px;
+        margin-left: 0; /* Center the hero */
+    }
+
+    .info {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .hero {
+        width: 40vw; /* Adjust size for smaller screens */
+        height: 40vw;
+        max-width: 300px; /* Restrict max size */
+        max-height: 300px;
+        margin-left: 0; /* Remove margin-left for better alignment */
+    }
+
+    .info {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
