@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './HeroStyles.module.css'; 
 import headshot from '../../assets/headshot.png'; 
 import githubIcon from '../../assets/github-brands-solid.svg';
