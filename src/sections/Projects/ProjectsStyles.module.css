@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px 20px;
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100vw; /* Ensures the container spans the full viewport width */
     margin: 0; /* Removes any extra margins */
     background-color: #582dc6; /* Slightly lighter background */

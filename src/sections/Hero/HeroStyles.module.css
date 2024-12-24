@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    min-height: 100vh;
+    min-height: 93vh;
     width: 100vw; /* Ensures the container spans the full viewport width */
     margin: 0; /* Removes any extra margins */
     background: url('../../assets/background_image.jpg');
