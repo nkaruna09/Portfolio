@@ -9,7 +9,6 @@
     margin: 0; /* Removes any extra margins */
     background: url('../../assets/background_image.jpg');
     background-size: cover; 
-    background-color: #000000; /* Soft pastel light gray */
     padding: 0 20px; /* Add horizontal padding only */
     box-sizing: border-box; /* Ensure padding is included in width/height */
 }
@@ -23,19 +22,18 @@
 .hero {
     width: 30vw; /* Fluid width relative to viewport */
     height: 30vw; /* Fluid height relative to viewport */
-    max-width: 500px; /* Set a maximum size */
+    max-width: 500px; 
     max-height: 500px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid #2E4053; /* Dark gray border */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
-    margin-left: 40%; /* Keeps the image aligned the way you like */
+    margin-left: 40%; 
 }
 
 .info {
     max-width: 600px;
     flex: 1;
-    margin: 5%; /* Reduced margins for fluid alignment */
+    margin: 5%; 
     text-align: left;
 }
 
@@ -43,22 +41,22 @@ h1 {
     font-size: 3rem;
     margin: 0;
     padding: 10px 0;
-    color: #f2a17c; /* Slightly darker modern gray */
+    color: #f2a17c; 
 }
 
 h2 {
     font-size: 1.8rem;
     margin: 10px 0;
-    color: #ddbfb1; /* Muted pastel gray-blue */
+    color: #ddbfb1; 
 }
 
 /* Specific Icon Styles for span img */
 .container span img {
-    width: 40px;  /* Make the icon size very small */
-    height: 40px; /* Ensure height is also adjusted */
-    filter: brightness(100) saturate(100%) invert(75%); /* Ensure color stays consistent */
+    width: 40px;  
+    height: 40px; 
+    filter: brightness(100) saturate(100%) invert(75%); 
     background-color: transparent;
-    padding: 5px; /* Ensure padding doesn't interfere */
+    padding: 5px; 
     box-shadow: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -68,10 +66,9 @@ h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for the paragraph */
 p {
     font-size: 1.2rem;
-    color: #00000096; /* Muted pastel gray */
+    color: #00000096; 
     line-height: 1.6;
     margin-top: 20px;
     display: block; 

@@ -1,0 +1,23 @@
+/* General reset for footer */
+.footer {
+    background-color: #1c044a; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 40px; /* Space around the footer content */
+    text-align: center; /* Center the content */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a clean look */
+}
+
+.content {
+    max-width: 1200px; /* Limit the width of the footer content */
+    margin: 0 auto; /* Center the content */
+}
+
+.footerText {
+    color: #1c044a; /* Apply orange color */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    font-size: 16px; /* Adjust text size if needed */
+}

@@ -1,0 +1,94 @@
+/* General container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+    min-height: 80vh;
+    width: 100vw;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Styling for textareas and input fields */
+textarea,
+input:not([type='submit']) {
+    height: 50px;
+    padding-left: 16px;
+    width: 250px;
+    font-family: 'Poppins', sans-serif; /* Poppins font for input and textarea */
+}
+
+/* Styling for the textarea */
+textarea {
+    padding-top: 16px;
+    resize: none;
+    height: 250px;
+}
+
+/* Common styling for input fields and textareas */
+input,
+textarea {
+    border-radius: 20px;
+    border: #e2c7f2 1px solid; /* Lighter purple border */
+    box-sizing: border-box;
+    justify-self: center;
+    background-color: #c4a4d6; /* Lighter purple background */
+    color: #4a2d69; /* Darker text color for contrast */
+}
+
+/* Placeholder styling */
+::placeholder {
+    color: #4a2d69; /* Darker placeholder color */
+}
+
+/* Submit button styling */
+input[type='submit'] {
+    background-color: #d8a8f9; /* Lighter purple background */
+    color: #4a2d69; /* Darker text color for contrast */
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    font-size: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hover effect for the button */
+input[type='submit']:hover {
+    transform: scale(1.05);
+}
+
+/* Active state for the button */
+input[type='submit']:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Media queries for responsive design */
+@media (width >= 800px) {
+    textarea,
+    input:not([type='submit']) {
+        width: 600px;
+        font-size: 20px;
+    }
+    form {
+        gap: 40px;
+    }
+}
+
+@media (width >= 1400px) {
+    textarea,
+    input:not([type='submit']) {
+        width: 800px;
+    }
+}
