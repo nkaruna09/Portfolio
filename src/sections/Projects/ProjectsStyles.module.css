@@ -35,10 +35,10 @@ h1.sectionTitle {
     display: block;
     text-align: center;
     text-decoration: none;
-    width: 500px;
+    width: 300px; /* Reduced width for smaller project containers */
     background-color: #32097c; 
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
@@ -53,31 +53,31 @@ h1.sectionTitle {
 /* Project image styling */
 .projectsContainer img {
     width: 100%;
-    height: 300px; 
+    height: 200px;  /* Reduced height for smaller images */
     object-fit: cover; 
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced space below images */
 }
 
 /* Title and text inside the project card */
 h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 18px; /* Reduced font size */
+    margin-bottom: 8px;
     font-weight: 600;
     color: #F3F4F6; 
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size */
     color: #3a0563; 
-    line-height: 1.5;
+    line-height: 1.4;
     font-weight: 600; 
 }
 
 /* Media Query for Tablets */
 @media (max-width: 768px) {
     .projectsContainer a {
-        max-width: 90%; /* Adjust width for tablets */
+        max-width: 80%; /* Adjust width for tablets */
     }
 
     h1.sectionTitle {
@@ -86,7 +86,7 @@ p {
     }
 
     .projectsContainer img {
-        max-height: 200px; /* Smaller image for tablets */
+        max-height: 180px; /* Smaller image for tablets */
     }
 
     h3 {
@@ -100,12 +100,16 @@ p {
 
 /* Media Query for Phones */
 @media (max-width: 480px) {
+    .container {
+        padding: 20px 10px; /* Reduced padding on the sides for small screens */
+    }
+
     .projectsContainer {
-        gap: 10px; /* Less spacing for phones */
+        gap: 15px; /* Adjust the gap between cards */
     }
 
     .projectsContainer a {
-        max-width: 100%; /* Full width for small phones */
+        width: 100%; /* Full width for small phones */
         padding: 10px; /* Compact padding */
     }
 
@@ -115,11 +119,11 @@ p {
     }
 
     .projectsContainer img {
-        max-height: 150px; /* Compact image size */
+        max-height: 150px; /* Smaller image for mobile */
     }
 
     h3 {
-        font-size: 14px; /* Compact title */
+        font-size: 14px; /* Smaller title for mobile screens */
     }
 
     p {
