@@ -1,4 +1,4 @@
-/* General container styling */
+/* ContactStyles.module.css */
 .container {
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ input:not([type='submit']) {
     height: 50px;
     padding-left: 16px;
     width: 250px;
-    font-family: 'Poppins', sans-serif; /* Poppins font for input and textarea */
+    font-family: 'Poppins', sans-serif; 
 }
 
 /* Styling for the textarea */
@@ -36,22 +36,22 @@ textarea {
 input,
 textarea {
     border-radius: 20px;
-    border: #e2c7f2 1px solid; /* Lighter purple border */
+    border: #e2c7f2 1px solid; 
     box-sizing: border-box;
     justify-self: center;
-    background-color: #ddbfb1; /* Lighter purple background */
-    color: #4a2d69; /* Darker text color for contrast */
+    background-color: #ddbfb1; 
+    color: #4a2d69;
 }
 
 /* Placeholder styling */
 ::placeholder {
-    color: #4a2d69; /* Darker placeholder color */
+    color: #4a2d69; 
 }
 
 /* Submit button styling */
 input[type='submit'] {
-    background-color: #f2a17c; /* Lighter purple background */
-    color: #4a2d69; /* Darker text color for contrast */
+    background-color: #f2a17c; 
+    color: #4a2d69; 
     border: none;
     border-radius: 20px;
     width: 126px;

@@ -1,49 +1,99 @@
-/* General reset for navbar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Navbar styling */
+/* Navbar base styles */
 .navbar {
     display: flex;
-    justify-content: flex-start; /* Align links to the left */
+    justify-content: space-between; /* Space between logo/hamburger and menu links */
     align-items: center;
     padding: 15px 20px;
     background-color: #1c044a;
     color: #f2a17c;
-    position: sticky; /* Makes navbar sticky */
-    top: 0; /* Stick to the top of the page */
-    width: 100%; /* Ensure the navbar spans the full width */
-    z-index: 1000; /* Ensure the navbar stays above other content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a clean look */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: 'Poppins', sans-serif;
-    font-weight: bold; 
-}
-
-/* Navbar links styling */
-.navLinks {
+    font-weight: bold;
+  }
+  
+  /* Navbar links */
+  .navLinks {
     list-style-type: none;
     display: flex;
-    margin-left: 0; /* Ensure no extra left margin */
-}
-
-.navLinks li {
-    margin: 0 20px; /* Add space between links */
-}
-
-.navLinks a {
+    margin: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .navLinks li {
+    margin: 0 20px;
+  }
+  
+  .navLinks a {
     color: #f2a17c;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 15px; /* Add padding to improve spacing */
     transition: color 0.3s;
-    padding: 5px 10px; /* Add some padding to the links for better click area */
-}
+  }
+  
+  .navLinks a:hover {
+    color: #f0a500;
+    background-color: rgba(240, 165, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #f2a17c;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .navLinks {
+      flex-direction: column;
+      background-color: #1c044a;
+      position: absolute;
+      top: 60px; /* Position menu below the navbar */
+      right: 0;
+      width: 100%; /* Ensure full width */
+      max-height: 0; /* Hidden by default */
+      overflow: hidden;
+      padding: 5px 0; /* Add padding inside the dropdown */
+    }
+  
+    .navLinks.show {
+      max-height: 500px; /* Show menu when toggled */
+    }
+  
+    .navLinks li {
+      margin: 10px 0; /* Add vertical spacing between links */
+      margin-left: 30px;
+    }
+  
+    .navLinks a {
+      text-align: center; /* Center align the text */
+      padding: 10px; /* Increase padding for larger clickable area */
+    }
+  
+    .hamburger {
+      display: flex;
+      margin-left: 30px; /* Prevent the logo from being cut off */
+    }
+  }
+  
 
-/* Hover effect for links */
-.navLinks a:hover {
-    color: #f0a500; /* Change to a golden color on hover */
-    background-color: rgba(240, 165, 0, 0.2); /* Optional background color change on hover */
-    border-radius: 4px; /* Optional rounded corners for the hover effect */
-}

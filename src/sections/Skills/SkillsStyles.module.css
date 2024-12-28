@@ -6,9 +6,9 @@
     padding: 50px 0;
     text-align: center;
     min-height: 80vh;
-    width: 100vw; /* Ensures the container spans the full viewport width */
-    margin: 0; /* Removes any extra margins */
-    background-color: #32097c; /* Slightly lighter background */
+    width: 100vw; 
+    margin: 0; 
+    background-color: #32097c; 
     color: #F3F4F6;
     box-sizing: border-box;
 }
@@ -21,11 +21,11 @@
 
 .skillsGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px; /* Adds spacing between the cards */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
     width: 100%;
-    max-width: 1200px; /* Optional, to center and limit the width */
-    margin: 0 auto; /* Center the grid */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .skillCard {
@@ -34,9 +34,9 @@
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
     padding: 20px;
-    background-color: #582dc6; /* Optional, to give a background to each card */
-    border-radius: 8px; /* Optional, to round the corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional, for a soft shadow */
+    background-color: #582dc6; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .skillCard:hover img {
@@ -47,7 +47,7 @@
 .skillCard img {
     width: 60px;
     height: 60px;
-    margin-bottom: 10px; /* Reduced spacing between image and text */
+    margin-bottom: 10px; 
     border-radius: 50%;
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -55,4 +55,34 @@
 .skillCard p {
     font-size: 1rem;
     color: #582dc6;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .skillsGrid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+
+    .sectionTitle {
+        font-size: 1.8rem; /* Slightly smaller title */
+    }
+}
+
+@media (max-width: 480px) {
+    .skillsGrid {
+        grid-template-columns: 1fr; /* Single column for phones */
+    }
+
+    .sectionTitle {
+        font-size: 1.5rem; /* Smaller title for small phones */
+    }
+
+    .skillCard img {
+        width: 40px; /* Smaller image for phones */
+        height: 40px;
+    }
+
+    .skillCard p {
+        font-size: 0.8rem; /* Smaller text */
+    }
 }

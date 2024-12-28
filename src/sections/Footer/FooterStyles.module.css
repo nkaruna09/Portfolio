@@ -1,23 +1,38 @@
-/* General reset for footer */
+/* FooterStyles.module.css */
 .footer {
-    background-color: #1c044a; /* Dark background color */
-    color: white; /* White text color */
-    padding: 20px 40px; /* Space around the footer content */
-    text-align: center; /* Center the content */
-    position: relative;
+    background-color: #1c044a; 
+    padding: 20px 40px; 
+    text-align: center; 
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a clean look */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .content {
-    max-width: 1200px; /* Limit the width of the footer content */
-    margin: 0 auto; /* Center the content */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .footerText {
-    color: #1c044a; /* Apply orange color */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
-    font-size: 16px; /* Adjust text size if needed */
+    color: #1c044a; 
+    margin: 0; 
+    padding: 0; 
+    font-size: 16px; 
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 20px; 
+        text-align: center; 
+    }
+
+    .footerText {
+        font-size: 14px; 
+        line-height: 1.5; 
+    }
+
+    .content {
+        padding: 0 10px; 
+    }
 }

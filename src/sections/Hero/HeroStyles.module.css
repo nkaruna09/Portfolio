@@ -1,16 +1,16 @@
-/* heroStyles.module.css */
+/* HeroStyles.module.css */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     min-height: 93vh;
-    width: 100vw; /* Ensures the container spans the full viewport width */
-    margin: 0; /* Removes any extra margins */
+    width: 100vw; 
+    margin: 0; 
     background: url('../../assets/background_image.jpg');
     background-size: cover; 
-    padding: 0 20px; /* Add horizontal padding only */
-    box-sizing: border-box; /* Ensure padding is included in width/height */
+    padding: 0 20px; 
+    box-sizing: border-box; 
 }
 
 .colorModeContainer {
@@ -20,13 +20,13 @@
 }
 
 .hero {
-    width: 30vw; /* Fluid width relative to viewport */
-    height: 30vw; /* Fluid height relative to viewport */
+    width: 30vw; 
+    height: 30vw; 
     max-width: 500px; 
     max-height: 500px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     margin-left: 40%; 
 }
 
@@ -50,7 +50,6 @@ h2 {
     color: #ddbfb1; 
 }
 
-/* Specific Icon Styles for span img */
 .container span img {
     width: 40px;  
     height: 40px; 
@@ -85,15 +84,15 @@ p {
         align-items: center;
         text-align: center;
         gap: 20px;
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px; 
     }
 
     .hero {
-        width: 35vw; /* Adjust size for medium screens */
+        width: 35vw; 
         height: 35vw;
-        max-width: 400px; /* Restrict max size */
+        max-width: 400px; 
         max-height: 400px;
-        margin-left: 0; /* Center the hero */
+        margin-left: 0; 
     }
 
     .info {
@@ -119,15 +118,15 @@ p {
         align-items: center;
         text-align: center;
         gap: 20px;
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px; 
     }
 
     .hero {
-        width: 40vw; /* Adjust size for smaller screens */
+        width: 40vw; 
         height: 40vw;
-        max-width: 300px; /* Restrict max size */
+        max-width: 300px; 
         max-height: 300px;
-        margin-left: 0; /* Remove margin-left for better alignment */
+        margin-left: 0; 
     }
 
     .info {

@@ -6,9 +6,9 @@
     justify-content: center;
     padding: 50px 20px;
     min-height: 80vh;
-    width: 100vw; /* Ensures the container spans the full viewport width */
-    margin: 0; /* Removes any extra margins */
-    background-color: #582dc6; /* Slightly lighter background */
+    width: 100vw; 
+    margin: 0; 
+    background-color: #582dc6; 
     color: #F3F4F6;
     box-sizing: border-box;
 }
@@ -16,7 +16,7 @@
 /* Title styling */
 h1.sectionTitle {
     font-size: 2.5rem;
-    color: #f3f4f6 !important; /* Light color for title */
+    color: #f3f4f6 !important; 
     margin-bottom: 40px;
     font-weight: bold;
     text-align: center;
@@ -36,25 +36,25 @@ h1.sectionTitle {
     text-align: center;
     text-decoration: none;
     width: 500px;
-    background-color: #32097c; /* Darker background for the project boxes */
+    background-color: #32097c; 
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* Ensures no content spills out */
+    overflow: hidden;
 }
 
 /* Hover effect on the project card */
 .projectsContainer a:hover {
-    transform: translateY(-5px); /* Slight upward movement on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Project image styling */
 .projectsContainer img {
     width: 100%;
-    height: 300px; /* Ensures all images are the same height */
-    object-fit: cover; /* Ensures images don't stretch */
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -64,12 +64,65 @@ h3 {
     font-size: 22px;
     margin-bottom: 10px;
     font-weight: 600;
-    color: #F3F4F6; /* Light color for the title */
+    color: #F3F4F6; 
 }
 
 p {
     font-size: 16px;
-    color: #3a0563; /* Lighter color for description text */
+    color: #3a0563; 
     line-height: 1.5;
     font-weight: 600; 
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    .projectsContainer a {
+        max-width: 90%; /* Adjust width for tablets */
+    }
+
+    h1.sectionTitle {
+        font-size: 1.8rem; /* Slightly smaller title */
+        margin-bottom: 20px;
+    }
+
+    .projectsContainer img {
+        max-height: 200px; /* Smaller image for tablets */
+    }
+
+    h3 {
+        font-size: 16px; /* Reduced size for titles */
+    }
+
+    p {
+        font-size: 14px; /* Maintain smaller text */
+    }
+}
+
+/* Media Query for Phones */
+@media (max-width: 480px) {
+    .projectsContainer {
+        gap: 10px; /* Less spacing for phones */
+    }
+
+    .projectsContainer a {
+        max-width: 100%; /* Full width for small phones */
+        padding: 10px; /* Compact padding */
+    }
+
+    h1.sectionTitle {
+        font-size: 1.5rem; /* Smaller title for small phones */
+        margin-bottom: 15px;
+    }
+
+    .projectsContainer img {
+        max-height: 150px; /* Compact image size */
+    }
+
+    h3 {
+        font-size: 14px; /* Compact title */
+    }
+
+    p {
+        font-size: 12px; /* Smaller text for better fit */
+    }
 }
