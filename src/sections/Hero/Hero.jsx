@@ -10,7 +10,7 @@ function Hero() {
     <section id="hero" className={styles.container}>
         <div className={styles.colorModeContainer}>
             <img className={styles.hero} src={headshot} alt="Headshot picture of Nithika" />
-        </div>
+        </div> 
 
         <div className={styles.info}> 
             <h1>Nithika Karunamoorthy</h1> 
