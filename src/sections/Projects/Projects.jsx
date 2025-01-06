@@ -4,6 +4,7 @@ import conversify from '../../assets/Conversify.png';
 import CNN from '../../assets/CNN_Google_Speech_Commands.png';
 import budgeting_system from '../../assets/budgeting_system.png'; 
 import ProjectCard from '../../common/ProjectCard';
+import Q_arm from '../../assets/QArm-07-700x766.jpg'; 
 
 function Projects() {
   return (
@@ -29,6 +30,13 @@ function Projects() {
                link="https://github.com/nkaruna09/CNN-google-speech-commands" 
                h3={"Convolutional Neural Network"} 
                p={"CNN built with Python, Keras, and TensorFlow to recognize Google Speech Commands, using NumPy, Matplotlib, and Pandas for analysis."}
+           /> 
+
+            <ProjectCard 
+               src={Q_arm} 
+               link="https://best-verdict-aa5.notion.site/Design-Project-2-c4a89210af48429a924743b47c5b248b" 
+               h3={"Get-a-Grip"} 
+               p={"Computer program designed using Python and Quanser Labs for controlling movement of a robotic arm to pick up and transfer a container into an autoclave for sterilization."}
            /> 
 
         </div>
