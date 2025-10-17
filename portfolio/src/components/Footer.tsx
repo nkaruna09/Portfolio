@@ -71,7 +71,7 @@ export function Footer() {
             <h4 className="mb-4" style={{ color: 'var(--foreground)' }}>Connect With Me</h4>
             <div className="flex gap-4 mb-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/nkaruna09" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg border transition-all hover:bg-cyan-400/10 hover:scale-110"
@@ -80,7 +80,7 @@ export function Footer() {
                 <Github className="w-5 h-5" style={{ color: 'var(--neon-cyan)' }} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/nithika-karunamoorthy/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg border transition-all hover:bg-cyan-400/10 hover:scale-110"
@@ -89,7 +89,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" style={{ color: 'var(--neon-cyan)' }} />
               </a>
               <a 
-                href="mailto:your.email@example.com"
+                href="mailto:nithika.karuna@gmail.com"
                 className="p-2 rounded-lg border transition-all hover:bg-cyan-400/10 hover:scale-110"
                 style={{ borderColor: 'var(--border)' }}
               >
@@ -116,7 +116,7 @@ export function Footer() {
           >
             Made with 
             <Heart className="w-4 h-4" style={{ color: 'var(--neon-teal)' }} fill="var(--neon-teal)" /> 
-            and lots of caffeine
+            and lots of butterflies!
           </p>
         </div>
       </div>

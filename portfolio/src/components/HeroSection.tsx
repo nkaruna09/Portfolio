@@ -188,7 +188,7 @@ export function HeroSection() {
             transition={{ delay: 0.9, duration: 0.8 }}
           >
             <a 
-              href="https://github.com" 
+              href="https://github.com/nkaruna09" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform"
@@ -196,7 +196,7 @@ export function HeroSection() {
               <Github className="w-6 h-6" style={{ color: 'var(--neon-cyan)' }} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/nithika-karunamoorthy/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform"
@@ -204,7 +204,7 @@ export function HeroSection() {
               <Linkedin className="w-6 h-6" style={{ color: 'var(--neon-cyan)' }} />
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:nithika.karuna@gmail.com"
               className="hover:scale-110 transition-transform"
             >
               <Mail className="w-6 h-6" style={{ color: 'var(--neon-cyan)' }} />

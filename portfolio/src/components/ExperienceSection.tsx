@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Briefcase, GraduationCap, Code } from 'lucide-react';
+import { Briefcase, GraduationCap, Code, Book } from 'lucide-react';
 import { Card } from './ui/card';
 import { AnimatedButterfly } from './Butterfly';
 
@@ -9,66 +9,66 @@ const experiences = [
     title: 'Bachelor of Engineering - Software Engineering & Management',
     organization: 'McMaster University',
     location: 'Hamilton, ON',
-    period: '2022 - Present',
-    description: 'Currently in 3rd year, focusing on full-stack development, project management, and bridging technical and business perspectives.',
+    period: 'Sept 2023 - Present',
+    description: 'Pursuing a dual degree in Software Engineering and Management, focusing on software development, project management, and business strategies.',
     icon: GraduationCap,
     color: 'var(--neon-cyan)',
     featured: true
   },
   {
     type: 'work',
-    title: 'Software Development Intern',
-    organization: 'Tech Company',
-    location: 'Remote',
-    period: 'Summer 2024',
-    description: 'Developed full-stack features, collaborated with cross-functional teams, and improved application performance by 30%.',
-    icon: Code,
+    title: 'Educational Research Assistant (CO-OP)',
+    organization: 'McMaster University',
+    location: 'Hamilton, ON',
+    period: 'May 2024 - Aug 2024',
+    description: '',
+    icon: Book,
     color: 'var(--neon-purple)',
     featured: true
   },
   {
     type: 'work',
-    title: 'Project Lead',
-    organization: 'University Project Team',
+    title: 'Career Assistant',
+    organization: 'McMaster University',
     location: 'McMaster University',
-    period: '2023 - 2024',
-    description: 'Led a team of 5 students in developing an innovative mobile application. Managed project timeline and coordinated sprints.',
+    period: 'Sept 2024 - April 2025',
+    description: '',
     icon: Briefcase,
     color: 'var(--neon-teal)',
     featured: true
   },
   {
     type: 'work',
-    title: 'Teaching Assistant',
+    title: 'Software Developer',
+    organization: 'McMaster Interdisplinary Satellite Team (MIST)',
+    location: 'Hamilton, ON',
+    period: 'April 2025 - Present',
+    description: 'Mission Operations and Controls (MOC), Flight Software (FSw)',
+    icon: Code,
+    color: 'var(--light-blue)',
+    featured: true
+  },
+  {
+    type: 'work',
+    title: 'Lead Career Assistant',
     organization: 'McMaster University',
     location: 'Hamilton, ON',
-    period: '2023 - Present',
-    description: 'Assisted in teaching introductory programming courses, held office hours, and mentored first-year students.',
-    icon: GraduationCap,
-    color: 'var(--light-blue)',
-    featured: false
-  },
-  {
-    type: 'work',
-    title: 'Volunteer Developer',
-    organization: 'Local Non-Profit',
-    location: 'Hamilton, ON',
-    period: '2023',
-    description: '',
-    icon: Code,
-    color: 'var(--lavender)',
-    featured: false
-  },
-  {
-    type: 'work',
-    title: 'Hackathon Participant',
-    organization: 'Various Events',
-    location: 'Multiple',
-    period: '2022 - Present',
+    period: 'Sept 2025 - Present',
     description: '',
     icon: Briefcase,
+    color: 'var(--neon-teal)',
+    featured: true
+  },
+  {
+    type: 'work',
+    title: 'Undegraduate Teaching Assistant',
+    organization: 'McMaster University',
+    location: 'Hamilton, ON',
+    period: 'Sept 2025 - Present',
+    description: '',
+    icon: GraduationCap,
     color: 'var(--neon-purple)',
-    featured: false
+    featured: true
   }
 ];
 

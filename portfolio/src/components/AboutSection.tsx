@@ -38,7 +38,7 @@ export function AboutSection() {
               <div 
                 className="w-full h-full"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1637904743105-3118bbe3ed8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBsYXB0b3AlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYwMzczMjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral)',
+                  backgroundImage: 'url(/profile.jpg)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
@@ -76,15 +76,11 @@ export function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <p className="mb-6" style={{ color: 'var(--muted-foreground)', lineHeight: '1.8' }}>
-              I'm a passionate software engineering and management student at McMaster University, 
-              currently in my third year. I love combining technical expertise with strategic thinking 
-              to create innovative solutions that make a real impact.
+              I’m a third-year Software Engineering and Management student at McMaster University, driven by curiosity and a passion for creating impactful tech solutions. I enjoy bridging the gap between engineering and business, building software that doesn’t just work, but actually serves users and makes a difference. Like a butterfly in code — evolving, adapting, and building beauty through transformation — I love collaborating with people, participating in hackathons, and bringing meaningful projects to life.
             </p>
             
             <p className="mb-8" style={{ color: 'var(--muted-foreground)', lineHeight: '1.8' }}>
-              My journey in tech has been driven by curiosity and a desire to bridge the gap between 
-              engineering and business. I believe in building not just functional software, but solutions 
-              that truly serve users and drive meaningful change.
+              When I’m not coding, you’ll usually find me playing badminton, going on hikes, hitting the gym, solving Rubik’s cubes, or getting lost in a good book.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

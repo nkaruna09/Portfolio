@@ -17,12 +17,12 @@ const skills = [
   {
     category: 'Database & Tools',
     icon: Database,
-    items: ['SQL', 'MongoDB', 'PostgreSQL', 'Firebase', 'Git']
+    items: ['SQL', 'Git']
   },
   {
     category: 'Management',
     icon: Sparkles,
-    items: ['Agile/Scrum', 'Project Management', 'Team Leadership', 'Business Analysis']
+    items: ['Agile/Scrum', 'Project Management', 'Team Leadership', 'Business Analysis', 'Confluence', 'Jira']
   },
   {
     category: 'Development Tools',
@@ -32,7 +32,7 @@ const skills = [
   {
     category: 'Other Skills',
     icon: Laptop,
-    items: ['Problem Solving', 'System Design', 'Technical Writing', 'UI/UX Design']
+    items: ['AutoCAD', '', 'Technical Writing', 'UI/UX Design']
   }
 ];
 
