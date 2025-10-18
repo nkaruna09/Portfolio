@@ -5,19 +5,25 @@ import { AnimatedButterfly } from './Butterfly';
 
 const skills = [
   {
-    category: 'Frontend Development',
+    category: 'Programming Languages',
     icon: Code2,
-    items: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'JavaScript']
+    items: ['Python', 'Java', 'C', 'JavaScript/TypeScript', 'HTML/CSS', 'MATLAB', 'Bash']
   },
   {
-    category: 'Backend Development',
+    category: 'Frontend & Backend Development',
     icon: Server,
-    items: ['Node.js', 'Python', 'Java', 'REST APIs', 'Express']
+    items: ['React', 'Node.js', 'Next.js', 'REST APIs', 'Flask', 'Fast API', 'Streamlit', 'SQL']
   },
   {
-    category: 'Database & Tools',
+    category: 'Machine Learning',
     icon: Database,
-    items: ['SQL', 'Git']
+    items: ['TensorFlow', 'Keras']
+  },
+  {
+    category: 'Development Tools',
+    icon: GitBranch ,
+    items: ['Git/GitHub', 'VS Code', 'Figma', 'Jupyter Notebook', 'Google Colab']
+    
   },
   {
     category: 'Management',
@@ -25,14 +31,9 @@ const skills = [
     items: ['Agile/Scrum', 'Project Management', 'Team Leadership', 'Business Analysis', 'Confluence', 'Jira']
   },
   {
-    category: 'Development Tools',
-    icon: GitBranch,
-    items: ['Git/GitHub', 'VS Code', 'Docker', 'Postman', 'Figma']
-  },
-  {
     category: 'Other Skills',
     icon: Laptop,
-    items: ['AutoCAD', '', 'Technical Writing', 'UI/UX Design']
+    items: ['AutoCAD', 'DaVinci Resolve', 'Microsoft Office Suite', 'Google Workspace']
   }
 ];
 

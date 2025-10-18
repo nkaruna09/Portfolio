@@ -80,7 +80,7 @@ export function AboutSection() {
             </p>
             
             <p className="mb-8" style={{ color: 'var(--muted-foreground)', lineHeight: '1.8' }}>
-              When I’m not coding, you’ll usually find me playing badminton, going on hikes, hitting the gym, solving Rubik’s cubes, or getting lost in a good book.
+              When I’m not coding, you’ll usually find me going on hikes or exploring, playing badminton, hitting the gym, solving Rubik’s cubes, or getting lost in a good book.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

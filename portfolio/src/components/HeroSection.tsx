@@ -158,7 +158,7 @@ export function HeroSection() {
             and bridging the gap between engineering and management
           </motion.p>
 
-          <motion.div
+          {/* <motion.div
             className="flex gap-4 justify-center items-center flex-wrap"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -179,7 +179,7 @@ export function HeroSection() {
             >
               Get In Touch
             </Button>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             className="flex gap-6 justify-center mt-12"

@@ -6,136 +6,103 @@ import { Badge } from './ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { useState } from 'react';
 import { AnimatedButterfly } from './Butterfly';
+import Save_a_Watt from '../assets/wattLogoT.png';
+import NutriSafe from '../assets/NutriSafe.png';
+import UpRight from '../assets/UpRight.png';
+import Conversify from '../assets/Conversify.png';
+import Recycling from '../assets/Recycling.webp';
+import Budgeting from '../assets/budgeting_system.png'; 
+import CNN from '../assets/CNN_Google_Speech_Commands.png'; 
+import Qarm from '../assets/QArm-07-700x766.jpg'; 
+import butterfly from '../../public/butterfly_icon.png'; 
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with user authentication, product management, and secure payment integration.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    image: 'https://images.unsplash.com/photo-1637904743105-3118bbe3ed8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBsYXB0b3AlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYwMzczMjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: 'Save-A-Watt',
+    description: 'Hack The Valley 2025 Project: An platform that analyzes users\'s energy bills and provides personalized recommendations to reduce consumption and subsidy recommendations to help reduce overall consumption and costs.',
+    technologies: ['React', 'TailwindCSS', 'Python', 'Flask', 'Gemini API', 'Catboost'],
+    image: Save_a_Watt,
+    github: 'https://github.com/nkaruna09/Save-A-Watt',
+    live: 'https://devpost.com/software/save-a-watt-52xf9p',
     category: 'web',
     featured: true
   },
   {
-    title: 'Task Management System',
-    description: 'Collaborative project management tool with real-time updates, team communication, and progress tracking.',
-    technologies: ['TypeScript', 'Next.js', 'PostgreSQL', 'Socket.io'],
-    image: 'https://images.unsplash.com/photo-1640552421447-1808735878e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwY2lyY3VpdCUyMGJvYXJkfGVufDF8fHx8MTc2MDQ0NjgzNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: 'NutriSafe',
+    description: 'DeltaHacks 2025 Project: A nutrition analysis app that uses AI to evaluate food products for allergens, dietary restrictions, and healthiness based on user profiles.',
+    technologies: ['Streamlit', 'Python', 'Cohere API', 'Open Food Facts API', 'Spoonacular API'],
+    image: NutriSafe,
+    github: 'https://github.com/nkaruna09/NutriSafe',
+    live: 'https://devpost.com/software/nutrisafe',
     category: 'web',
     featured: true
   },
   {
-    title: 'AI Study Companion',
-    description: 'An intelligent study assistant that helps students organize notes, create flashcards, and track learning progress.',
-    technologies: ['Python', 'React', 'TensorFlow', 'Flask'],
-    image: 'https://images.unsplash.com/photo-1642011797050-25e74bae1210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuaWdodCUyMHNreSUyMHN0YXJzJTIwYmx1ZXxlbnwxfHx8fDE3NjA0NjI4Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'ai',
-    featured: true
+    title: 'UpRight',
+    description: 'MacChangers Project: Chrome extension that sends posture reminders every 20 minutes and offers real-time posture analysis for a healthier, pain-free lifestyle.',
+    technologies: ['JavaScript', 'Flask', 'Mediapipe', 'HTML/CSS', 'Python'],
+    image: UpRight,
+    github: 'https://github.com/nkaruna09/UpRight',
+    live: 'https://devpost.com/software/upright-qd0pbg',
+    category: 'web',
+    featured: false
   },
   {
-    title: 'Mobile Fitness Tracker',
-    description: 'Track workouts, calories, and fitness goals with real-time analytics.',
+    title: 'Conversify',
+    description: 'Ignition Hack 2024 Project: Multi-language conversation simulator offering dynamic, AI-driven dialogue with varying difficulty levels for an interactive experience.',
     technologies: ['React Native', 'Firebase', 'Redux'],
-    image: 'https://images.unsplash.com/photo-1580983561252-463dca6ad904?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBmaXRuZXNzJTIwYXBwfGVufDF8fHx8MTc2MDQ1NjI0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'mobile',
-    featured: false
-  },
-  {
-    title: 'Weather Dashboard',
-    description: 'Real-time weather forecasting with interactive maps and alerts.',
-    technologies: ['Vue.js', 'OpenWeather API', 'Chart.js'],
-    image: 'https://images.unsplash.com/photo-1643686978040-beac9782e58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWF0aGVyJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MDQ2NTk4OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    image: Conversify,
+    github: 'https://github.com/nkaruna09/Conversify',
+    live: 'https://devpost.com/software/conversify-37xcsf',
     category: 'web',
+    featured: true
+  },
+  {
+    title: 'Student Budgeting Program',
+    description: 'Text based student budgeting program to help student effectively manage their finances.',
+    technologies: ['Linux', 'C', 'Bash'],
+    image: Budgeting,
+    github: 'https://github.com/nkaruna09/student-budgeting-app',
+    category: 'extra',
     featured: false
   },
   {
-    title: 'Expense Tracker',
-    description: 'Personal finance management with budgeting and reporting features.',
-    technologies: ['React', 'Express', 'MySQL'],
-    image: 'https://images.unsplash.com/photo-1705948734805-9dff79aaae03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwbW9uZXklMjBidWRnZXR8ZW58MXx8fHwxNzYwNDY1OTg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'web',
+    title: 'Convolutional Neural Network',
+    description: 'Convolutional Neural Network to recognize Google Speech Commands',
+    technologies: ['Keras', 'TensorFlow', 'Numpy', 'Python', 'Matplotlib', 'Pandas'],
+    image: CNN,
+    github: 'https://github.com/nkaruna09/CNN-google-speech-commands',
+    category: 'ml',
     featured: false
   },
   {
-    title: 'Recipe Finder',
-    description: 'Discover recipes based on ingredients you have at home.',
-    technologies: ['Next.js', 'Tailwind', 'Spoonacular API'],
-    image: 'https://images.unsplash.com/photo-1572171579626-e79450374587?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwcmVjaXBlJTIwY29va2luZ3xlbnwxfHx8fDE3NjA0NjU5ODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'web',
+    title: 'Get-a-Grip',
+    description: 'Computer program designed for controlling movement of a robotic arm to pick up and transfer a container into an autoclave for sterilization.',
+    technologies: ['Python', 'Quanser Labs'],
+    image: Qarm,
+    github: '',
+    live: 'https://best-verdict-aa5.notion.site/Design-Project-2-c4a89210af48429a924743b47c5b248b',
+    category: 'extra',
     featured: false
   },
   {
-    title: 'Code Snippet Manager',
-    description: 'Organize and share code snippets with syntax highlighting.',
-    technologies: ['TypeScript', 'MongoDB', 'Prism.js'],
-    image: 'https://images.unsplash.com/photo-1565229284535-2cbbe3049123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RlJTIwcHJvZ3JhbW1pbmd8ZW58MXx8fHwxNzYwNDU1NjU3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'web',
-    featured: false
-  },
-  {
-    title: 'Sentiment Analysis Tool',
-    description: 'Analyze text sentiment using machine learning models.',
-    technologies: ['Python', 'scikit-learn', 'NLTK', 'Flask'],
-    image: 'https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8fHx8MTc2MDQwNTcxMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'ai',
-    featured: false
-  },
-  {
-    title: 'Chat Application',
-    description: 'Real-time messaging with WebSocket support.',
-    technologies: ['React', 'Socket.io', 'Node.js'],
-    image: 'https://images.unsplash.com/photo-1637904743105-3118bbe3ed8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBsYXB0b3AlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYwMzczMjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'web',
+    title: 'Recycling System',
+    description: 'Protyped a mechanism that sorts and disposes of contrainers into their respective bins using a hopper.',
+    technologies: ['AutoCAD', 'PursaSlicer'],
+    image: Recycling,
+    github: '',
+    live: 'https://best-verdict-aa5.notion.site/Design-Project-3-ba9576dbf64948f2aa6652617c19c4d7',
+    category: 'extra',
     featured: false
   },
   {
     title: 'Portfolio Website',
-    description: 'Custom portfolio generator with CMS integration.',
-    technologies: ['Gatsby', 'Contentful', 'GraphQL'],
-    image: 'https://images.unsplash.com/photo-1640552421447-1808735878e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwY2lyY3VpdCUyMGJvYXJkfGVufDF8fHx8MTc2MDQ0NjgzNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    description: 'This website you are looking at right now!',
+    technologies: ['React', 'TailwindCSS'],
+    image: butterfly,
+    github: 'https://github.com/nkaruna09/Portfolio',
+    live: 'https://nithika.netlify.app/',
     category: 'web',
-    featured: false
-  },
-  {
-    title: 'Image Recognition App',
-    description: 'Object detection and classification using computer vision.',
-    technologies: ['Python', 'TensorFlow', 'OpenCV'],
-    image: 'https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8fHx8MTc2MDQwNTcxMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'ai',
-    featured: false
-  },
-  {
-    title: 'Habit Tracker',
-    description: 'Build better habits with daily tracking and streaks.',
-    technologies: ['React Native', 'SQLite', 'Expo'],
-    image: 'https://images.unsplash.com/photo-1580983561252-463dca6ad904?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBmaXRuZXNzJTIwYXBwfGVufDF8fHx8MTc2MDQ1NjI0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    category: 'mobile',
     featured: false
   }
 ];
@@ -146,8 +113,8 @@ export function ProjectsSection() {
   const categories = [
     { id: 'all', label: 'All Projects' },
     { id: 'web', label: 'Web Apps' },
-    { id: 'mobile', label: 'Mobile' },
-    { id: 'ai', label: 'AI/ML' }
+    { id: 'ml', label: 'Machine Learning' },
+    { id: 'extra', label: 'Extra' }
   ];
 
   const featuredProjects = projects.filter(p => p.featured);
