@@ -50,7 +50,7 @@ const projects = [
   {
     title: 'Conversify',
     description: 'Ignition Hack 2024 Project: Multi-language conversation simulator offering dynamic, AI-driven dialogue with varying difficulty levels for an interactive experience.',
-    technologies: ['React Native', 'Firebase', 'Redux'],
+    technologies: ['React', 'Flask', 'Cohere LLM', 'Javascript', 'Python'], 
     image: Conversify,
     github: 'https://github.com/nkaruna09/Conversify',
     live: 'https://devpost.com/software/conversify-37xcsf',
